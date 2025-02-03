@@ -3,21 +3,21 @@ A Joint Pairwise and Pointwise Learning Method based on Controversial Items Samp
 </h1>
 
 <p align="center">
-  <a href="#2. Quick Start🚀">Quick Start</a> •
+  <a href="#quick-start">Quick Start</a> •
   <a href="">Paper</a> •
-  <a href="#3. Citation☕️">Citation</a>
+  <a href="#citation">Citation</a>
 </p>
 
 
 
 Repo for submation of KDD'25: [A Joint Pairwise and Pointwise Learning Method based on Controversial Items Sampling]
 
-## 1. Introduction✨
+<h2 id="introduction">1. Introduction✨</h2>
+
 Recommender systems help users find more interesting items by mining their historical behaviors to understand their preferences. The training loss of the recommendation models evolves from pointwise loss to pairwise loss. The pairwise loss is well adapted to the inherent problems in recommender systems, such as missing true negative samples, and brings good performance. However, since the goal of the pairwise loss is to maximize the score difference between positive and negative samples without limitation, the positive samples become extremely large while the negative samples become extremely small. The system enhances the experience of some users while hurting the experience of others. In this paper, we propose a rating-based joint learning method (RJL), which explores the possibility of jointly learning pairwise and pointwise losses based on explicitly rating data. Specifically, RJL contains a novel loss function to find the overlapping solution spaces of the two loss functions by simultaneously optimizing the pairwise and pointwise losses. The overlapping solution space is more rigorous and has a higher probability of finding an optimal solution because it eliminates suboptimal solutions through mutual interaction. Additionally, we develop a novel controversial items sampling method, which extracts negative samples from rating data, avoiding potential systematic errors from hypothetical labels of unobserved items introduced by the pointwise loss. Experimental results on four datasets show the proposed method's superior performance compared to state-of-the-art methods, with an average increase of 5.12% on NDCG@5.
 
 
-
-## 2. Quick Start🚀
+<h2 id="quick-start">2. Quick Start🚀</h2>
 
 1. File Structure
 
@@ -42,10 +42,9 @@ python src/run.py
 
 
 
+<h2 id="citation">3. Citation☕️</h2>
 
-## 3. Citation☕️
-
-If you find this repository helpful, please consider citing our paper:
+If you find this repository helpful, please consider citing our paper when it has been accepted.
 
 <!-- ```
 @inproceedings{liu-ickm-2023-tse,
