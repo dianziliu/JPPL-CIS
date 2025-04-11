@@ -25,15 +25,17 @@ Recommender systems help users find more interesting items by mining their histo
 .\data [training data]  
 .\src  
 ```
+For training data, you can easily download the [MovieLens](https://grouplens.org/datasets/)movielens/ and [Yahoo!](http://webscope.sandbox.yahoo.com/catalog.php?datatype=r) datasets.
 
-2. Compile source files
+
+1. Compile source files
 
 ```sh
 g++ -std=c++11 -o src/APPL.run src/APPL.cpp 
 ```
+We implemented a matrix factorization-based JPPL method in C++, which typically runs faster than other versions.
 
-
-3. training the model
+3. training and testing the model
 
 ```sh
 python src/run.py
