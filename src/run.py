@@ -81,7 +81,7 @@ def evulation_all_datasets(repeat=5):
                 
                 upath=u_path.format(name,i)
                 ipath=i_path.format(name,i)
-                exe="src/RJL.run"
+                exe="src/APPL.run"
 
                 cmd="{} -debug 0 -n_users {} -n_items {} -dim {} -iter {} -lr {} -rg {} \
                 -train_path {} -test_path {} -u_path {} -i_path {} -a {} -b {}".format(

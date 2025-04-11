@@ -29,7 +29,7 @@ Recommender systems help users find more interesting items by mining their histo
 2. Compile source files
 
 ```sh
-g++ -std=c++11 -o src/RJL.run src/RJL.cpp 
+g++ -std=c++11 -o src/APPL.run src/APPL.cpp 
 ```
 
 
